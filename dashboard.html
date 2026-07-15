@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Task Management System</h2>
+
+        <div class="header-right">
+            <span>Welcome, User</span>
+            <a href="index.html">Logout</a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="mytask.html">📝 My Tasks</a></li>
+                <li><a href="addtask.html">➕ Add Task</a></li>
+                <li><a href="calendar.html">📅 Calendar</a></li>
+                <li><a href="progress.html">📊 Progress</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+                <li><a href="about.html">ℹ️ About Us</a></li>
+                <li><a href="contact.html">📞 Contact Us</a></li>
+                <li><a href="index.html">🚪 Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <h2>Welcome to your Dashboard!</h2>
+
+            <p>
+                Manage your daily tasks, monitor progress,
+                and stay organized using the sidebar menu.
+            </p>
+
+            <div class="cards">
+
+                <!-- Total Tasks -->
+                <div class="card">
+                    <div class="progress-circle">
+                        <span id="totalTasks">0</span>
+                    </div>
+                    <h3>Total Tasks</h3>
+                </div>
+
+                <!-- Completed Tasks -->
+                <div class="card">
+                    <div class="progress-circle">
+                        <span id="completedTasks">0</span>
+                    </div>
+                    <h3>Completed</h3>
+                </div>
+
+                <!-- Pending Tasks -->
+                <div class="card">
+                    <div class="progress-circle">
+                        <span id="pendingTasks">0</span>
+                    </div>
+                    <h3>Pending</h3>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

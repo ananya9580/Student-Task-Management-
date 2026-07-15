@@ -1,0 +1,86 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Box */
+.login-container{
+    width: 350px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.login-container h2{
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.login-container label{
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+.login-container input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.login-container input:focus{
+    border-color: #1abc9c;
+    outline: none;
+}
+
+/* Login Button */
+.login-container button{
+    width: 100%;
+    padding: 12px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover{
+    background: #16a085;
+}ś
+
+/* Register Link */
+.login-container p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-container a{
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.login-container a:hover{
+    text-decoration: underline;
+}

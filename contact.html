@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+background:#2c3e50;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+}
+
+.header-right{
+display:flex;
+gap:20px;
+}
+
+.header-right a{
+color:white;
+text-decoration:none;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:250px;
+min-height:100vh;
+background:#34495e;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li a{
+display:block;
+padding:18px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar li a:hover{
+background:#1abc9c;
+}
+
+.content{
+flex:1;
+padding:40px;
+}
+
+.contact-box{
+width:600px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.contact-box h2{
+margin-bottom:20px;
+color:#2c3e50;
+}
+
+.contact-box label{
+display:block;
+margin:10px 0 5px;
+font-weight:bold;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact-box textarea{
+resize:none;
+}
+
+button{
+margin-top:20px;
+padding:12px 20px;
+background:#1abc9c;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#16a085;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Task Management System</h2>
+
+<div class="header-right">
+<span>Welcome, User</span>
+<a href="index.html">Logout</a>
+</div>
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+<ul>
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+<li><a href="mytasks.html">📝 My Tasks</a></li>
+<li><a href="addtask.html">➕ Add Task</a></li>
+<li><a href="calendar.html">📅 Calendar</a></li>
+<li><a href="progress.html">📊 Progress</a></li>
+<li><a href="profile.html">👤 Profile</a></li>
+<li><a href="about.html">ℹ️ About Us</a></li>
+<li><a href="contact.html">📞 Contact Us</a></li>
+<li><a href="index.html">🚪 Logout</a></li>
+</ul>
+</aside>
+
+<main class="content">
+
+<div class="contact-box">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Message</label>
+<textarea rows="5" placeholder="Write your message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</main>
+
+</div>
+
+</body>
+</html>

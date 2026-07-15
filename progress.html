@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+
+<header>
+    <h2>Task Management System</h2>
+
+    <div class="header-right">
+        <span>Welcome, User</span>
+        <a href="index.html">Logout</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="mytask.html">📝 My Tasks</a></li>
+            <li><a href="addtask.html">➕ Add Task</a></li>
+            <li><a href="calendar.html">📅 Calendar</a></li>
+            <li><a href="progress.html">📊 Progress</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="about.html">ℹ️ About Us</a></li>
+            <li><a href="contact.html">📞 Contact Us</a></li>
+            <li><a href="index.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <div class="progress-box">
+
+            <h2>📊 Task Progress</h2>
+
+            <p>Total Tasks: <span id="totalTasks">0</span></p>
+
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+
+            <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+
+            <div class="bar">
+                <div class="fill" id="progressBar"></div>
+            </div>
+
+            <h3 id="percentage">0% Completed</h3>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="progress.js"></script>
+
+</body>
+</html>

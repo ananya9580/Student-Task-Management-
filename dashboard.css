@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+
+header{
+    background:#2c3e50;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.header-right a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Layout */
+
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#34495e;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px;
+}
+
+.sidebar li a:hover{
+    background:#1abc9c;
+}
+
+/* Content */
+
+.content{
+    flex:5;
+    padding:35px;
+}
+.content p{
+    padding: 20px;
+}
+
+.cards{
+    display:flex;
+    gap:200px;
+    margin-top:40px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.progress-circle{
+    width:90px;
+    height:90px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:conic-gradient(
+        #00c6ff 0deg,
+        #0072ff 180deg,
+        #ff4fd8 360deg
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.progress-circle::before{
+    content:"";
+    position:absolute;
+    width:72px;
+    height:72px;
+    background:#fff;
+    border-radius:50%;
+}
+
+.progress-circle span{
+    position:relative;
+    font-size:28px;
+    font-weight:bold;
+    color:#333;
+    z-index:1;
+}

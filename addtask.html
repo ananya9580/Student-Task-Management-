@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Task</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+header{
+    background:#2c3e50;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.header-right a{
+    color:white;
+    text-decoration:none;
+}
+
+.header-right a:hover{
+    color:#1abc9c;
+}
+
+/* Layout */
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#34495e;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px;
+}
+
+.sidebar li a:hover{
+    background:#1abc9c;
+}
+
+/* Main Content */
+.content{
+    flex:1;
+    padding:40px;
+}
+
+.content h1{
+    color:#2c3e50;
+    margin-bottom:25px;
+}
+
+/* Form */
+.form-box{
+    width:600px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.form-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.form-box textarea{
+    resize:none;
+}
+
+.btn{
+    margin-top:20px;
+    background:#1abc9c;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#16a085;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h2>Task Management System</h2>
+
+    <div class="header-right">
+        <span>Welcome, User</span>
+        <a href="index.html">Logout</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="mytask.html">📝 My Tasks</a></li>
+            <li><a href="addtask.html">➕ Add Task</a></li>
+            <li><a href="calendar.html">📅 Calendar</a></li>
+            <li><a href="progress.html">📊 Progress</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="about.html">ℹ️ About Us</a></li>
+            <li><a href="contact.html">📞 Contact Us</a></li>
+            <li><a href="index.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>➕ Add New Task</h1>
+
+        <div class="form-box">
+
+           <form id="taskForm">
+
+    <label>Task Title</label>
+    <input type="text" id="title" placeholder="Enter Task Title" required>
+
+    <label>Description</label>
+    <textarea id="description" rows="4" placeholder="Enter Task Description" required></textarea>
+
+    <label>Priority</label>
+    <select id="priority" required>
+        <option value="">-- Select Priority --</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select>
+
+    <label>Due Date</label>
+    <input type="date" id="dueDate" required>
+
+    <button type="submit" class="btn">Add Task</button>
+
+</form>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+     <script src="script.js"></script>
+</html>

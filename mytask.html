@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="mytask.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Task Management System</h2>
+
+    <div class="header-right">
+        <span>Welcome, User</span>
+        <a href="index.html">Logout</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="mytask.html">📝 My Tasks</a></li>
+            <li><a href="addtask.html">➕ Add Task</a></li>
+            <li><a href="calendar.html">📅 Calendar</a></li>
+            <li><a href="progress.html">📊 Progress</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+            <li><a href="about.html">ℹ️ About Us</a></li>
+            <li><a href="contact.html">📞 Contact Us</a></li>
+            <li><a href="login.html">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>📝 My Tasks</h1>
+        <div class="search-box">
+    <input
+        type="text"
+        id="searchTask"
+        placeholder="🔍 Search Task..."
+        onkeyup="searchTask()"
+    >
+</div>
+
+       
+        <div id="taskList"></div>
+
+    </main>
+
+</div>
+
+<script src="mytask.js"></script>
+
+</body>
+</html>

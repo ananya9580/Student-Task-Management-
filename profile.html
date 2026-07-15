@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+background:#2c3e50;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+}
+
+.header-right{
+display:flex;
+gap:20px;
+}
+
+.header-right a{
+color:white;
+text-decoration:none;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:250px;
+min-height:100vh;
+background:#34495e;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li a{
+display:block;
+padding:18px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar li a:hover{
+background:#1abc9c;
+}
+
+.content{
+flex:1;
+padding:40px;
+}
+
+.profile-box{
+width:500px;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+margin:auto;
+}
+
+.profile-img{
+width:120px;
+height:120px;
+border-radius:50%;
+background:#1abc9c;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+margin:auto;
+margin-bottom:20px;
+}
+
+.profile-box h2{
+text-align:center;
+margin-bottom:20px;
+margin-top:2%;
+padding:10px;
+}
+
+.profile-box p{
+font-size:18px;
+margin:12px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Task Management System</h2>
+
+<div class="header-right">
+<span>Welcome, User</span>
+<a href="index.html">Logout</a>
+</div>
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+<ul>
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+<li><a href="mytasks.html">📝 My Tasks</a></li>
+<li><a href="addtask.html">➕ Add Task</a></li>
+<li><a href="calendar.html">📅 Calendar</a></li>
+<li><a href="progress.html">📊 Progress</a></li>
+<li><a href="profile.html">👤 Profile</a></li>
+<li><a href="about.html">ℹ️ About Us</a></li>
+<li><a href="contact.html">📞 Contact Us</a></li>
+<li><a href="index.html">🚪 Logout</a></li>
+</ul>
+</aside>
+
+<main class="content">
+
+<h1>👤 My Profile</h1>
+
+<div class="profile-box">
+
+<div class="profile-img">A</div>
+
+<h2>Ananya Shukla</h2>
+
+<p><strong>Email:</strong> ananyaalokshukla44@gmail.com</p>
+
+<p><strong>Mobile:</strong> +91 9120766093</p>
+
+<p><strong>Department:</strong>B.Sc. IT</p>
+
+<p><strong>Role:</strong> Student</p>
+
+</div>
+
+</main>
+
+</div>
+
+</body>
+</html>
