@@ -24,7 +24,4 @@ This project helps students organize their daily tasks, track progress, and stay
 ---
 
 ##Live Demo 
-
-
-```bash
-git clone https://github.com/your-username/student-task-manager.git
+(https://ananya9580.github.io/Student-Task-Management-/)
